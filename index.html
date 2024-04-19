@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplu</title>
-</head>
-<body>
+    </head>
+
+  <script>
+    document.cookie = 'session=test GDPR';
+    document.cookie = 'favorite_task=collect Data';
+    function alertCookie() {
+      alert(document.cookie);
+    }
+  </script>
+
+  <body>
     <h1>Bine ai venit la lab</h1>
-    <button id="button">Show cookies</button>
-</body>
+    <button onclick="alertCookie()">Show cookies</button>
+  </body>
 </html>
